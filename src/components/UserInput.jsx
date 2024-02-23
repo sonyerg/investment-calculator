@@ -9,7 +9,7 @@ export default function UserInput({ onChange, userInput }) {
   // function handleUserInput(inputIdentifier, newValue) {
   //   setUserInput((prevInput) => {
   //     return {
-  //       ...prevInput,
+  //       ...prevInput, // unchanged values are still intact
   //       [inputIdentifier]: newValue,
   //     };
   //   });

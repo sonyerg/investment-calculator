@@ -2,7 +2,6 @@ import Header from "./components/Header";
 import Results from "./components/Results";
 import UserInput from "./components/UserInput";
 import { useState, useEffect } from "react";
-import { calculateInvestmentResults } from "./util/investment";
 
 function App() {
   const [userInput, setUserInput] = useState({
@@ -26,7 +25,7 @@ function App() {
       return {
         ...prevInput,
         [inputIdentifier]: +newValue,
-        // the plus converts the string into number, fixing the Nan problem
+        // the plus converts the string into number, fixing the Nan problem.
       };
     });
   }
